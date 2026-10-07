@@ -1,0 +1,166 @@
+.help-page {
+    position: relative;
+    isolation: isolate;
+    box-sizing: border-box;
+    width: min(960px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 56px 0 72px;
+    color: #183b35;
+    text-align: left;
+}
+
+.help-page::before {
+    position: fixed;
+    z-index: -1;
+    inset: 0;
+    background-image: url('./assets/backgroudtotal.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    pointer-events: none;
+}
+
+.help-header {
+    padding: 30px 28px;
+    border-bottom: 1px solid rgba(23, 76, 67, 0.22);
+    background: rgba(255, 255, 255, 0.82);
+}
+
+.help-eyebrow {
+    margin: 0 0 12px;
+    color: #a45d42;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.help-header h1 {
+    margin: 0;
+    color: #174c43;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.help-intro {
+    margin: 12px 0 0;
+    color: #52645f;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.help-topic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 48px;
+    padding: 10px 28px;
+    background: rgba(255, 255, 255, 0.82);
+}
+
+.help-topic {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 14px;
+    align-content: start;
+    padding: 26px 0;
+    border-bottom: 1px solid rgba(23, 76, 67, 0.18);
+}
+
+.help-topic-number {
+    padding-top: 3px;
+    color: #a45d42;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 14px;
+}
+
+.help-topic h2,
+.help-concierge h2 {
+    margin: 0 0 8px;
+    color: #174c43;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.help-topic p,
+.help-concierge > p:last-child {
+    margin: 0;
+    color: #52645f;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.help-concierge {
+    margin-top: 28px;
+    padding: 28px 32px;
+    background: #174c43;
+    color: #fff;
+}
+
+.help-concierge .help-eyebrow {
+    color: #e8b49a;
+}
+
+.help-concierge h2 {
+    color: #fff;
+}
+
+.help-concierge > p:last-child {
+    color: #e3ece8;
+}
+
+:root[data-theme="dark"] .help-page {
+    color: #e6eee9;
+}
+
+:root[data-theme="dark"] .help-header,
+:root[data-theme="dark"] .help-topic {
+    border-color: rgba(230, 238, 233, 0.2);
+}
+
+:root[data-theme="dark"] .help-header,
+:root[data-theme="dark"] .help-topic-grid {
+    background: rgba(18, 25, 22, 0.84);
+}
+
+:root[data-theme="dark"] .help-header h1,
+:root[data-theme="dark"] .help-topic h2 {
+    color: #e6eee9;
+}
+
+:root[data-theme="dark"] .help-intro,
+:root[data-theme="dark"] .help-topic p {
+    color: #bac9c0;
+}
+
+@media (max-width: 640px) {
+    .help-page {
+        width: min(100% - 32px, 480px);
+        padding: 38px 0 52px;
+    }
+
+    .help-header h1 {
+        font-size: 34px;
+    }
+
+    .help-header {
+        padding: 24px 20px;
+    }
+
+    .help-topic-grid {
+        grid-template-columns: 1fr;
+        padding: 8px 20px;
+    }
+
+    .help-topic {
+        padding: 20px 0;
+    }
+
+    .help-concierge {
+        padding: 24px;
+    }
+}

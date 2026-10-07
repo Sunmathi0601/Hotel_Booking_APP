@@ -1,0 +1,31 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    background:rgb(196, 196, 195);
+    background-image:url('banner.jpeg');
+    background-position: center;
+    background-size: cover;
+   
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+.hero-content h1 {
+    font-size: 35px;
+     color: white;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    font-style: italic;
+     color: white;
+    line-height: 1.6;
+}
+
+.hero-image img {
+   width: 100%;
+   
+}

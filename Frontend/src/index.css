@@ -1,0 +1,90 @@
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+:root[data-theme="dark"] body {
+  background-color: #121916;
+  color: #e6eee9;
+}
+
+:root[data-theme="dark"] #root {
+  background-color: #121916;
+  border-color: #293630;
+}
+
+:root[data-theme="dark"] nav {
+  background-color: #1d2924;
+}
+
+:root[data-theme="dark"] nav h1,
+:root[data-theme="dark"] nav li a {
+  color: #e3eee8;
+}
+
+:root[data-theme="dark"] nav li .theme-toggle {
+  border-color: #52645a;
+  color: #e3eee8;
+}
+
+:root[data-theme="dark"] nav li .theme-toggle:hover {
+  background-color: #2b3b33;
+}
+
+:root[data-theme="dark"] .search-bar {
+  background-color: #1d2924;
+}
+
+:root[data-theme="dark"] .search-bar input,
+:root[data-theme="dark"] .search-bar select,
+:root[data-theme="dark"] .hotel-edit-form input,
+:root[data-theme="dark"] .hotel-edit-form textarea,
+:root[data-theme="dark"] .booking-form input,
+:root[data-theme="dark"] .booking-form select {
+  border-color: #52645a;
+  background-color: #17211c;
+  color: #e6eee9;
+}
+
+:root[data-theme="dark"] .hotel-card,
+:root[data-theme="dark"] .full-details,
+:root[data-theme="dark"] .hotel-page-content,
+:root[data-theme="dark"] .booking-section {
+  border-color: #3b4b42;
+  background-color: #1d2924;
+  color: #e6eee9;
+}
+
+:root[data-theme="dark"] .hotel-details h3,
+:root[data-theme="dark"] .hotel-edit-form h2,
+:root[data-theme="dark"] .hotel-page-details h1,
+:root[data-theme="dark"] .booking-section h2,
+:root[data-theme="dark"] .billing-section h3,
+:root[data-theme="dark"] .billing-total,
+:root[data-theme="dark"] .booking-form label {
+  color: #e6eee9;
+}
+
+:root[data-theme="dark"] .hotel-details p,
+:root[data-theme="dark"] .hotel-page-details p,
+:root[data-theme="dark"] .hotel-edit-form label,
+:root[data-theme="dark"] .billing-line,
+:root[data-theme="dark"] .billing-note {
+  color: #bac9c0;
+}
+
+:root[data-theme="dark"] .close-button,
+:root[data-theme="dark"] .back-button {
+  border-color: #52645a;
+  background-color: #26352d;
+  color: #e6eee9;
+}
+
+:root[data-theme="dark"] .billing-section {
+  border-color: #3b4b42;
+  background-color: #17211c;
+}
+
+:root[data-theme="dark"] .billing-total {
+  border-color: #3b4b42;
+}

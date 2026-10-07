@@ -1,0 +1,159 @@
+*{
+  padding: 0;
+  margin: 0
+}
+
+body{
+  background-color:rgb(243, 237, 156);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width: 100%;
+  min-height: 80px;
+  background-color:rgb(247, 243, 243);
+  box-sizing:border-box;
+  padding: 12px clamp(18px, 6vw, 72px);
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  text-align:left;
+}
+
+.nav-shell {
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+nav h1{
+  margin:0;
+  color:#174c43;
+  font-size:24px;
+  letter-spacing:2px;
+  white-space:nowrap;
+}
+
+.nav-subtitle{
+  display:block;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size:12px;
+  font-weight:400;
+  letter-spacing:.5px;
+  
+}
+
+ul{
+  display: flex;
+  align-items:center;
+  gap: 30px;
+  list-style: none;
+  margin:0;
+} 
+
+nav li a{
+  display:block;
+  padding:10px 14px;
+  text-decoration: none;
+  color:#174c43;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.5px;
+  white-space:nowrap;
+}
+
+nav li .nav-add-hotel{
+  border-radius:4px;
+  background-color:#d86b4b;
+  color:#fff;
+}
+
+nav li .nav-add-hotel:hover{
+  background-color:#c75a3b;
+  opacity:1;
+}
+
+nav li:last-child a:not(.nav-help-link){
+  border-radius:4px;
+  background-color:#d86b4b;
+  color:#fff;
+}
+
+nav li .nav-help-link[aria-current="page"] {
+  border-radius:4px;
+  background-color:#e9efeb;
+  color:#174c43;
+}
+
+nav li a:hover{
+  opacity:.78;
+}
+
+nav li .theme-toggle{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  padding:9px 12px;
+  border:1px solid #d4ddd8;
+  border-radius:4px;
+  background:transparent;
+  color:#174c43;
+  font:inherit;
+  font-size:14px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+nav li .theme-toggle:hover{
+  background:#e9efeb;
+}
+
+:root[data-theme="dark"] nav li .nav-help-link[aria-current="page"] {
+  background-color:#2b3b33;
+  color:#e3eee8;
+}
+
+@media (max-width: 520px){
+  nav{
+    padding:12px 16px;
+  }
+
+  nav h1{
+    font-size:19px;
+    letter-spacing:1px;
+  }
+
+  ul{
+    gap:4px;
+  }
+
+  nav li a{
+    padding:9px 8px;
+    font-size:12px;
+  }
+
+  nav li .theme-toggle{
+    gap:4px;
+    padding:8px 6px;
+    font-size:12px;
+  }
+}
+
+@media (max-width: 380px){
+  nav h1{
+    font-size:16px;
+    letter-spacing:0;
+  }
+
+  nav li .theme-toggle{
+    gap:0;
+    padding:8px;
+  }
+
+  .theme-toggle-label{
+    display:none;
+  }
+}
+
+
